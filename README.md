@@ -1,53 +1,53 @@
-# 🦖 DinoHack — PeppermintGrave Dino Engine
+# DinoHack — PeppermintGrave Dino Engine
 
-> A custom JavaScript enhancement panel for the **Chrome Dino Game**, built by **PeppermintGrave**.
+> A custom JavaScript enhancement panel for the Chrome Dino Game, built by **PeppermintGrave**.
 
 A sleek, customizable control panel that lets you modify the Chrome Dino experience directly from the browser.
 
 ---
 
-## ✦ Features
+## Features
 
-### ⚡ Dino Engine
+### Dino Engine
 
 The **Dino Engine** provides a live control panel with:
 
-- ✓ God Mode
-- ⚡ Custom game speed
-- 🎨 Multiple UI themes
-- 🌈 Custom accent colors
-- 👻 Panel opacity control
-- ✨ Adjustable glow strength
-- 📦 Compact mode
-- ➖ Minimize / expand panel
-- ⏹️ Stop Engine
-- ▶️ Restart Engine
-- 🔄 Reset speed
-- 🖱️ Smooth draggable interface
-- 📱 Mobile-friendly controls
-- 💻 Desktop support
+- God Mode
+- Custom game speed
+- Multiple UI themes
+- Custom accent colors
+- Panel opacity control
+- Adjustable glow strength
+- Compact mode
+- Minimize / expand panel
+- Stop Engine
+- Restart Engine
+- Reset speed
+- Smooth draggable interface
+- Mobile-friendly controls
+- Desktop support
 
 ---
 
-## 🎨 Themes
+## Themes
 
 Dino Engine includes several built-in themes:
 
 | Theme | Style |
 |---|---|
-| 🍃 `Peppermint` | Neon green |
-| 🌹 `Rose` | Pink |
-| ❄️ `Ice` | Cyan / blue |
-| 💜 `Violet` | Purple |
-| 🪙 `Gold` | Golden yellow |
-| 🩸 `Blood` | Red |
-| 🎨 `Custom` | Choose your own accent |
+| `Peppermint` | Neon green |
+| `Rose` | Pink |
+| `Ice` | Cyan / blue |
+| `Violet` | Purple |
+| `Gold` | Golden yellow |
+| `Blood` | Red |
+| `Custom` | Choose your own accent |
 
 You can also select a completely custom accent color using the built-in color picker.
 
 ---
 
-## 🛡️ God Mode
+## God Mode
 
 > **God Mode prevents the Dino game from triggering its normal `gameOver` behavior.**
 
@@ -66,18 +66,18 @@ When disabled:
 The engine also displays the current state:
 
 ```text
-● GOD MODE ACTIVE
+GOD MODE ACTIVE
 ```
 
 or:
 
 ```text
-● GOD MODE OFF
+GOD MODE OFF
 ```
 
 ---
 
-## ⚡ Speed Control
+## Speed Control
 
 Dino Engine allows the game speed to be adjusted from:
 
@@ -98,7 +98,7 @@ The current speed is displayed directly inside the panel.
 
 ---
 
-## 🎛️ Panel Customization
+## Panel Customization
 
 ### Panel Opacity
 
@@ -120,7 +120,7 @@ This changes the intensity of the neon glow effect around the panel.
 
 ---
 
-## 📦 Compact Mode
+## Compact Mode
 
 **Compact Mode** hides the main panel controls while keeping the engine panel available.
 
@@ -138,7 +138,7 @@ Expand panel
 
 ---
 
-## ➖ Minimize
+## Minimize
 
 The `−` button collapses the panel body.
 
@@ -152,7 +152,7 @@ Press it again to restore the controls.
 
 ---
 
-## ⏹️ Engine Controls
+## Engine Controls
 
 ### Stop Engine
 
@@ -167,7 +167,7 @@ STOPPED
 and:
 
 ```text
-● ENGINE STOPPED
+ENGINE STOPPED
 ```
 
 ### Restart Engine
@@ -183,7 +183,7 @@ ONLINE
 and:
 
 ```text
-● ENGINE ACTIVE
+ENGINE ACTIVE
 ```
 
 ### Reset Speed
@@ -192,7 +192,7 @@ Restores the original game speed.
 
 ---
 
-## 🖱️ Dragging
+## Dragging
 
 The panel can be moved around the screen by dragging the **Dino Engine header**.
 
@@ -202,13 +202,13 @@ The interface uses pointer events for smooth desktop and touch dragging.
 
 ---
 
-# 💻 Desktop
+# Desktop
 
 The desktop version uses a **JavaScript bookmarklet**.
 
 ### Requirements
 
-- Google Chrome / Chromium-based browser
+- Google Chrome or Chromium-based browser
 - Chrome Dino Game
 - JavaScript enabled
 
@@ -232,30 +232,30 @@ Open Chrome Dino first!
 
 ---
 
-# 📱 Mobile
+# Mobile
 
 The mobile version is also provided as a JavaScript bookmarklet.
 
 It includes the same core Dino Engine interface:
 
-- ✓ God Mode
-- ⚡ Speed control
-- 🎨 Themes
-- 🎨 Custom colors
-- 👻 Opacity
-- ✨ Glow
-- 📦 Compact mode
-- ➖ Minimize
-- ⏹️ Stop Engine
-- ▶️ Restart Engine
-- 🔄 Reset speed
-- 🖱️ Touch-friendly dragging
+- God Mode
+- Speed control
+- Themes
+- Custom colors
+- Opacity
+- Glow
+- Compact mode
+- Minimize
+- Stop Engine
+- Restart Engine
+- Reset speed
+- Touch-friendly dragging
 
 The mobile script is stored separately inside the `Scripts` folder.
 
 ---
 
-# 📁 Repository Structure
+# Repository Structure
 
 ```text
 DinoHack/
@@ -271,7 +271,7 @@ DinoHack/
 
 ---
 
-# 🧩 How It Works
+# How It Works
 
 Dino Engine interacts with the Chrome Dino game's JavaScript `Runner` object.
 
@@ -311,7 +311,7 @@ method.
 
 ---
 
-# 🔄 Engine Lifecycle
+# Engine Lifecycle
 
 ```text
 Open Chrome Dino
@@ -333,7 +333,7 @@ When the engine is stopped, the original `gameOver` behavior and stored game spe
 
 ---
 
-# 🎨 UI Design
+# UI Design
 
 The interface follows the **PeppermintGrave** aesthetic.
 
@@ -359,35 +359,35 @@ with a neon-green accent.
 
 ---
 
-# 🧪 Status Indicators
+# Status Indicators
 
 ### Engine Active
 
 ```text
-● ENGINE ACTIVE
+ENGINE ACTIVE
 ```
 
 ### Engine Stopped
 
 ```text
-● ENGINE STOPPED
+ENGINE STOPPED
 ```
 
 ### God Mode Active
 
 ```text
-● GOD MODE ACTIVE
+GOD MODE ACTIVE
 ```
 
 ### God Mode Disabled
 
 ```text
-● GOD MODE OFF
+GOD MODE OFF
 ```
 
 ---
 
-# ⚠️ Compatibility
+# Compatibility
 
 Dino Engine relies on the internal JavaScript structure of the Chrome Dino Game.
 
@@ -404,7 +404,7 @@ If Chrome changes these internals, parts of the engine may stop working until th
 
 ---
 
-# 🔧 Troubleshooting
+# Troubleshooting
 
 ### `Open Chrome Dino first!`
 
@@ -431,7 +431,7 @@ Drag from the **DINO ENGINE header**, rather than directly from a button.
 
 ---
 
-# 🚀 Project Goals
+# Project Goals
 
 DinoHack is designed to provide a clean and customizable interface for experimenting with the Chrome Dino game's client-side JavaScript.
 
@@ -439,7 +439,7 @@ Future versions may introduce additional customization and experimental controls
 
 ---
 
-# 👤 Creator
+# Creator
 
 ## PeppermintGrave
 
@@ -456,7 +456,7 @@ Chrome Dino Runner
 
 ---
 
-# 📜 Disclaimer
+# Disclaimer
 
 DinoHack is an experimental browser-side JavaScript project intended for educational and personal experimentation with the Chrome Dino Game.
 
@@ -464,15 +464,15 @@ Use it responsibly and only in environments where modifying the game is permitte
 
 ---
 
-# ⭐ Support
+# Support
 
-If you find the project interesting, consider giving the repository a ⭐.
+If you find the project interesting, consider giving the repository a star.
 
 **Repository:**  
 https://github.com/PeppermintGrave/DinoHack
 
 ---
 
-> 🦖 **PEPPERMINTGRAVE — DINO ENGINE**
+> **PEPPERMINTGRAVE — DINO ENGINE**
 >
 > *Customize the run. Control the engine. Keep going.*
