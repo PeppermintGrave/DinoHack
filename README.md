@@ -237,6 +237,44 @@ Open Chrome Dino first!
 
 ---
 
+## Quick Invincibility Script — Computer Only
+
+This is a simple alternative to the full Dino Engine panel. **It is only for computers** and is intended to be run in the browser's developer console.
+
+### What It Does
+
+- Sets the Dino game speed to `100x`.
+- Disables the normal `gameOver` behavior.
+- Pressing `Backspace` restores the original `gameOver` function.
+- After restoring it, the next obstacle can end the game normally.
+
+### Usage
+
+1. Open the Chrome Dino Game on a computer.
+2. Open the browser's developer console.
+3. Copy and paste the script below.
+4. Run the script.
+5. Press `Backspace` to turn off invincibility.
+
+### Script
+
+```javascript
+Runner.instance_.setSpeed(100);
+var originalGameOver = Runner.prototype.gameOver;
+Runner.prototype.gameOver = function() {};
+
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Backspace') {
+    Runner.prototype.gameOver = originalGameOver;
+    console.log("Invincibility OFF! The next obstacle will end the game.");
+  }
+});
+```
+
+> Run this after the Chrome Dino game has loaded. Pressing `Backspace` restores the original game-over function; it does not automatically end the current run.
+
+---
+
 # Mobile
 
 The mobile version uses a **URL-encoded JavaScript bookmarklet**.
